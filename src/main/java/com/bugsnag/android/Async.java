@@ -35,7 +35,7 @@ class Async {
             CORE_POOL_SIZE, MAXIMUM_POOL_SIZE, KEEP_ALIVE_SECONDS, TimeUnit.SECONDS,
             POOL_WORK_QUEUE, THREAD_FACTORY);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
-            threadPoolExecutor.allowCoreThreadTimeOut(true);
+            // threadPoolExecutor.allowCoreThreadTimeOut(true);
         }
         EXECUTOR = threadPoolExecutor;
     }
